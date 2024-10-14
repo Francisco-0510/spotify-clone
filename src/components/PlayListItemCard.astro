@@ -1,5 +1,6 @@
 ---
 import type { Playlist } from '@/lib/data';
+import { CardPlayButton } from './CardPlayButton';
 
 interface Props {
 	playlist: Playlist;
@@ -18,7 +19,7 @@ const artistsString = artists.join(', ');
         transition-all duration-500 opacity-0
         group-hover:translate-y-0 group-hover:opacity-100
         z-10`>
-		CardPlayButton id={id} client:visible
+		<CardPlayButton id={id} client:visible />
 	</div>
 
 	<a
