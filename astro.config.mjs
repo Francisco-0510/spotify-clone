@@ -9,6 +9,9 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [tailwind(), svelte(), react()],
-    output: 'server',
+	integrations: [tailwind(), svelte(), react()],
+	output: 'server',
+	devToolbar: {
+		enabled: false,
+	},
 });
